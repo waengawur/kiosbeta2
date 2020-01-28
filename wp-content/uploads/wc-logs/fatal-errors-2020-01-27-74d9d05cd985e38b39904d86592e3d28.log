@@ -1,0 +1,11 @@
+2020-01-27T18:43:45+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/kiosbeta2/wp-content/plugins/woodmart-core/vendor/opauth/twitteroauth/twitteroauth.php:195
+Stack trace:
+#0 /var/www/kiosbeta2/wp-content/plugins/woodmart-core/vendor/opauth/twitteroauth/twitteroauth.php(182): TwitterOAuth->http('https://api.twi...', 'GET')
+#1 /var/www/kiosbeta2/wp-content/plugins/woodmart-core/vendor/opauth/twitteroauth/twitteroauth.php(142): TwitterOAuth->oAuthRequest('https://api.twi...', 'GET', Array)
+#2 /var/www/kiosbeta2/wp-content/themes/woodmart/inc/template-tags.php(1618): TwitterOAuth->get('statuses/user_t...', Array)
+#3 /var/www/kiosbeta2/wp-content/themes/woodmart/inc/shortcodes/twitter.php(28): woodmart_get_twitts(Array)
+#4 /var/www/kiosbeta2/wp-includes/shortcodes.php(325): woodmart_twitter(Array, '', 'woodmart_twitte...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /var/www/kiosbeta2/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(woodma...', 'do_shortcode_ta...', '[woodmart_title...')
+# in /var/www/kiosbeta2/wp-content/plugins/woodmart-core/vendor/opauth/twitteroauth/twitteroauth.php on line 195
+
